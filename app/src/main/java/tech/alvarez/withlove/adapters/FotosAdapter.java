@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,9 +35,7 @@ public class FotosAdapter extends RecyclerView.Adapter<FotosAdapter.ViewHolder> 
         Foto f = dataset.get(position);
         holder.nombreTextView.setText(f.getNombre());
 
-        Glide.with(context)
-                .load(f.getFotoURL())
-                .into(holder.fotoImageView);
+        // TODO: Usar Glide para descargar la imagen y colocarla en el fotoImageView
     }
 
     @Override

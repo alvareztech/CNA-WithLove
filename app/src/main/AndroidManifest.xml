@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tech.alvarez.withlove">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!--TODO: Adicionar permiso de Internet-->
 
     <application
         android:allowBackup="true"
